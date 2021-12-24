@@ -1,5 +1,4 @@
 header {
-  padding: 0px 30px;
   position: fixed;
   top: 0;
   background-color: #f5e4e4;
@@ -9,7 +8,7 @@ header {
   .headerInner {
     height: 60px;
     display: flex;
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
     align-items: center;
     justify-content: space-between;
@@ -23,9 +22,8 @@ header {
     color: orange;
     text-decoration: none;
   }
-  .menuHeaderNav {
-    margin: 0 0 0 auto;
-  }
+  // .menuHeaderNav {
+  // }
   .menuUl {
     padding-right: 30px;
     align-items: center;
