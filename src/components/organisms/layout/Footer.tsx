@@ -1,14 +1,14 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import { memo, VFC } from "react";
 
-import styles from "../../../styles/header/header.module.css";
+import "../../../styles/header/header.module.css";
 
 export const Header: VFC = memo(() => {
   return (
-    <header className={styles.header}>
-      <div className={styles.headerInner}>
-        <h1 className={styles.siteTitle}>
-          <a className={styles.headerLogo} href="/home">
+    <header>
+      <div className="header-inner">
+        <h1 className="site-title">
+          <a className="header-logo" href="/home">
             訪問看護ステーション
           </a>
         </h1>

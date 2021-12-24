@@ -1,42 +1,33 @@
 header {
-  width: 100%;
-  height: 60px;
-  background-color: rgb(221, 165, 60);
+  display: flex;
+  padding: 0px 30px;
   position: fixed;
   top: 0;
-}
-
-.header-inner {
-  width: 60%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.site-title {
-  font-weight: bold;
-}
-
-.header-logo {
-  text-decoration: none;
-}
-
-// .menu-header-nav {
-
-// }
-
-.menu-ul {
-  display: flex;
-}
-
-.menu-item {
-  list-style: none;
-}
-
-.pdf-btn {
-  border-radius: 20%;
-}
-
-.sns-btn {
-  border-radius: 20%;
+  width: 100%;
+  background-color: red;
+  .headerInner {
+    display: flex;
+    width: 80%;
+  }
+  .siteTitle {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+  }
+  .headerLogo {
+    text-decoration: none;
+    color: black;
+  }
+  .menuHeaderNav {
+    margin: 0 0 0 auto;
+  }
+  .menuUl {
+    list-style: none;
+    margin: 0;
+    display: flex;
+  }
+  .menuItem {
+    margin: 0 0 0 15px;
+    font-size: 14px;
+  }
 }
