@@ -1,0 +1,42 @@
+header {
+  width: 100%;
+  height: 60px;
+  background-color: rgb(221, 165, 60);
+  position: fixed;
+  top: 0;
+}
+
+.header-inner {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-title {
+  font-weight: bold;
+}
+
+.header-logo {
+  text-decoration: none;
+}
+
+// .menu-header-nav {
+
+// }
+
+.menu-ul {
+  display: flex;
+}
+
+.menu-item {
+  list-style: none;
+}
+
+.pdf-btn {
+  border-radius: 20%;
+}
+
+.sns-btn {
+  border-radius: 20%;
+}
