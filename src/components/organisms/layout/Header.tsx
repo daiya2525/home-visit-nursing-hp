@@ -2,7 +2,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import { memo, VFC } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { faInstagramSquare } from "@fortawesome/free-brands-svg-icons";
 
 import styles from "../../../styles/header/header.module.css";
 
@@ -35,7 +35,7 @@ export const Header: VFC = memo(() => {
             <a href="#">
               <FontAwesomeIcon
                 className={styles.headerIcon}
-                icon={faInstagram}
+                icon={faInstagramSquare}
               />
             </a>
           </ul>

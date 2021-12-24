@@ -40,18 +40,25 @@ header {
         font-weight: bold;
         text-decoration: none;
         &:hover {
-          opacity: 0.8;
+          opacity: 0.6;
         }
       }
     }
     a {
       img {
         width: 100px;
+        &:hover {
+          opacity: 0.8;
+        }
       }
     }
     .headerIcon {
       color: orange;
-      font-size: 2.5em;
+      font-size: 2.4em;
+      padding-left: 30px;
+      &:hover {
+        opacity: 0.8;
+      }
     }
   }
 }
