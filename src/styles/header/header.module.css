@@ -8,6 +8,7 @@ header {
 }
 
 header .headerInner {
+  height: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
