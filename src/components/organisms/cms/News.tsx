@@ -17,7 +17,7 @@ export const News: VFC<Props> = memo((props) => {
             <span className={styles.newsTag}>
               <a href="/">お知らせ</a>
             </span>
-            <span className={styles.newsData}>{news.id}</span>
+            <span className={styles.newsData}>2021-12-27</span>
             <span className={styles.newsTitle}>
               <a href="/">{news.title}</a>
             </span>
@@ -26,7 +26,7 @@ export const News: VFC<Props> = memo((props) => {
             <span className={styles.newsTag}>
               <a href="/">お知らせ</a>
             </span>
-            <span className={styles.newsData}>{news.id}</span>
+            <span className={styles.newsData}>2021-12-27</span>
             <span className={styles.newsTitle}>
               <a href="/">{news.title}</a>
             </span>
