@@ -5,6 +5,11 @@ import { Member } from "../components/pages/Member";
 import { Page404 } from "../components/pages/Page404";
 import { Recruitment } from "../components/pages/Recruitment";
 
+// const news = {
+//   newsData: "2021-12-6",
+//   newsTitle: "閉館時間が変更されました",
+// };
+
 export const HomeRoutes = [
   {
     path: "/",

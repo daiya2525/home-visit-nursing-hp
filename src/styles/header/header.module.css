@@ -1,13 +1,14 @@
 header {
   position: fixed;
   top: 0;
-  background-color: #f5e4e4;
+  background-color: rgba(255, 255, 255, 0.9);
   width: 100%;
-  height: 60px;
+  height: 70px;
+  z-index: 999;
 }
 
 header .headerInner {
-  height: 60px;
+  height: 70px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -28,12 +29,10 @@ header .siteTitle {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 20px;
 }
 
-header .headerLogo {
-  color: orange;
-  text-decoration: none;
+header .siteTitle img {
+  width: 40px;
 }
 
 header .menuUl {
@@ -53,10 +52,14 @@ header .menuUl .menuItem {
   width: 80px;
 }
 
+header .menuUl .menuItem:first-child {
+  width: 240px;
+}
+
 header .menuUl .menuItem a {
   color: orange;
   display: block;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: bold;
   text-decoration: none;
 }
@@ -66,7 +69,7 @@ header .menuUl .menuItem a:hover {
 }
 
 header .menuUl a img {
-  width: 100px;
+  width: 120px;
 }
 
 header .menuUl a img:hover {
@@ -75,7 +78,7 @@ header .menuUl a img:hover {
 
 header .menuUl .headerIcon {
   color: orange;
-  font-size: 2.4em;
+  font-size: 80px;
   padding-left: 30px;
 }
 

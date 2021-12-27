@@ -3,6 +3,7 @@
 import { memo, VFC } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagramSquare } from "@fortawesome/free-brands-svg-icons";
+import nimil from "../../../static/images/nimil.png";
 
 import styles from "../../../styles/header/header.module.css";
 
@@ -10,11 +11,9 @@ export const Header: VFC = memo(() => {
   return (
     <header className={styles.header}>
       <div className={styles.headerInner}>
-        <h1 className={styles.siteTitle}>
-          <a className={styles.headerLogo} href="/home">
-            訪問看護ステーション
-          </a>
-        </h1>
+        <a href="/home" className={styles.siteTitle}>
+          <img src={nimil} alt="タイトルロゴの画像です" />
+        </a>
         <nav className={styles.menuHeaderNav}>
           <ul className={styles.menuUl}>
             <li className={styles.menuItem}>
@@ -29,10 +28,17 @@ export const Header: VFC = memo(() => {
             <li className={styles.menuItem}>
               <a href="/home/contact">お問合せ</a>
             </li>
-            <a href="#">
-              <img src="https://houkankesera.net/wp/wp-content/themes/kesera/images/mousikomi.png" />
+            <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vSyb7t86oGFh059p9adw3_zbdctc0JXf2b5CldU1n4uI87hdoEsM65U_vRvQ6leoyOWFBIXyuZfQYXg/pub?output=pdf">
+              <img
+                src="https://houkankesera.net/wp/wp-content/themes/kesera/images/mousikomi.png"
+                alt="お申し込みページへのイメージロゴ画像です"
+              />
             </a>
-            <a href="#">
+            <a
+              href="https://www.instagram.com/inomotodaiya"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FontAwesomeIcon
                 className={styles.headerIcon}
                 icon={faInstagramSquare}
