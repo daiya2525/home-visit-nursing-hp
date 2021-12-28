@@ -48,14 +48,7 @@ export const Home: VFC = memo(() => {
       </section>
 
       <section className={styles.bgPc}>
-        <div className={styles.mainWrap}>
-          <ul className={styles.fTitleBox}>
-            <li className={styles.fTitle}>News</li>
-            <li className={styles.fLine}></li>
-            <li className={styles.fText}>イベント & ニュース</li>
-          </ul>
-          <News news={news} />
-        </div>
+        <News news={news} />
       </section>
     </main>
   );
