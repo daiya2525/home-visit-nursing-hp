@@ -6,14 +6,31 @@ import backgroundImage2 from "../../static/images/backgroundImage2.jpg";
 import backgroundImage3 from "../../static/images/backgroundImage3.jpg";
 import backgroundImage4 from "../../static/images/backgroundImage4.jpg";
 
-import { News } from "../organisms/cms/News";
+import { News } from "../organisms/layout/News";
 
-const news = {
-  id: 2021,
-  title: "ステーションの閉館時間が変更されました",
-};
+// const news = {
+//   id: 2021,
+//   userId: 1,
+//   title: "ステーションの閉館時間が変更されました2",
+//   body: "こんにちは井野本大也です",
+// };
 
 export const Home: VFC = memo(() => {
+  // const [newsData, setNewsData] = useState<Array<NewsType>>([]);
+  // useEffect(() => {
+  //   axios
+  //     .get<Array<NewsType>>("https://jsonplaceholder.typicode.com/posts")
+  //     .then((res) => {
+  //       const data = res.data.map((news) => ({
+  //         id: news.id,
+  //         userId: news.userId,
+  //         title: news.title,
+  //         body: news.body,
+  //       }));
+  //       setNewsData(data);
+  //     });
+  // }, []);
+
   return (
     <main>
       <section className={styles.bgImageContainer}>
@@ -48,7 +65,7 @@ export const Home: VFC = memo(() => {
       </section>
 
       <section className={styles.bgPc}>
-        <News news={news} />
+        <News />
       </section>
     </main>
   );
