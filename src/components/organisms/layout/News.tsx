@@ -5,19 +5,21 @@ import { NewsType } from "../../../types/newsType";
 
 export const News: VFC = memo(() => {
   const [newsData, setNewsData] = useState<NewsType[]>([]);
+  const ApiUrl = "https://jsonplaceholder.typicode.com/posts";
   useEffect(() => {
-    axios
-      .get<NewsType[]>("https://jsonplaceholder.typicode.com/posts")
-      .then((res) => {
-        const data = res.data.map((news) => ({
-          id: news.id,
-          userId: news.userId,
-          title: news.title,
-          body: news.body,
-        }));
-        setNewsData(data);
-      });
+    axios.get<NewsType[]>(ApiUrl).then((res) => {
+      const data = res.data.map((news) => ({
+        id: news.id,
+        userId: news.userId,
+        title: news.title,
+        body: news.body,
+      }));
+      setNewsData(data);
+    });
   }, []);
+  const filterData = newsData.filter((data) => {
+    return data.id < 4;
+  });
 
   return (
     <div className={styles.mainWrap}>
@@ -29,7 +31,7 @@ export const News: VFC = memo(() => {
       <div className={styles.newsWrap}>
         <div className={styles.newsInnerWrap}>
           <ul className={styles.newsList}>
-            {newsData.map((news: NewsType, index) => {
+            {filterData.map((news: NewsType, index) => {
               return (
                 <li key={index} className={styles.newsItem}>
                   <span className={styles.newsTag}>
