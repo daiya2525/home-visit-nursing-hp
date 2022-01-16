@@ -2,7 +2,7 @@ import { About } from "../components/pages/About";
 import { Contact } from "../components/pages/Contact";
 import { Home } from "../components/pages/Home";
 import { Member } from "../components/pages/Member";
-import { NewsSection } from "../components/pages/NewsSection";
+import { NewsPage } from "../components/pages/NewsPage";
 import { Page404 } from "../components/pages/Page404";
 import { Recruitment } from "../components/pages/Recruitment";
 
@@ -33,9 +33,9 @@ export const HomeRoutes = [
     children: <Contact />,
   },
   {
-    path: "/news_section",
+    path: "/news_page",
     exact: false,
-    children: <NewsSection />,
+    children: <NewsPage />,
   },
   {
     path: "*",

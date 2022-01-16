@@ -3,9 +3,9 @@ import { memo, VFC } from "react";
 
 import "../../../styles/header/header.module.css";
 
-export const Header: VFC = memo(() => {
+export const Footer: VFC = memo(() => {
   return (
-    <header>
+    <footer>
       <div className="header-inner">
         <h1 className="site-title">
           <a className="header-logo" href="/home">
@@ -31,6 +31,6 @@ export const Header: VFC = memo(() => {
           </ul>
         </nav>
       </div>
-    </header>
+    </footer>
   );
 });

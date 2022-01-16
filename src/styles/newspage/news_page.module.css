@@ -1,0 +1,46 @@
+.introWrapper {
+  padding-top: 70px;
+  height: 200px;
+  width: 100%;
+}
+
+.introWrapper {
+  padding-top: 70px;
+  width: 100%;
+  background-color: orange;
+  position: relative;
+}
+
+.introWrapper .fTitleBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 35px;
+}
+
+.introWrapper .fTitleBox .fTitle {
+  font-size: 50px;
+  letter-spacing: -0.05em;
+  color: white;
+  margin: 0px;
+  padding: 0px 5px 0px 0px;
+  font-weight: 400;
+  padding-right: 20px;
+}
+
+.introWrapper .fTitleBox .fLine {
+  border-right: 1px solid white;
+}
+
+.introWrapper .fTitleBox .fText {
+  font-size: 15px;
+  font-weight: 400;
+  color: white;
+  vertical-align: 10px;
+  padding-left: 20px;
+  padding-top: 22px;
+}
+/*# sourceMappingURL=news_page.module.css.map */

@@ -36,7 +36,7 @@ export const News: VFC = memo(() => {
               return (
                 <li key={index} className={styles.newsItem}>
                   <span className={styles.newsTag}>
-                    <a href="/">お知らせ</a>
+                    <a href="/home/news_page">お知らせ</a>
                   </span>
                   <span className={styles.newsData}>{news.created_at}</span>
                   <span className={styles.newsTitle}>

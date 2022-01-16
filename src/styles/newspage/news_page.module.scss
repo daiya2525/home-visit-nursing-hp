@@ -1,0 +1,38 @@
+.introWrapper {
+  padding-top: 70px;
+  height: 200px;
+  width: 100%;
+}
+
+.introWrapper {
+  padding-top: 70px;
+  width: 100%;
+  background-color: orange;
+  position: relative;
+  .fTitleBox {
+    display: flex;
+    justify-content: center;
+    padding-top: 35px;
+
+    .fTitle {
+      font-size: 50px;
+      letter-spacing: -0.05em;
+      color: rgb(255, 255, 255);
+      margin: 0px;
+      padding: 0px 5px 0px 0px;
+      font-weight: 400;
+      padding-right: 20px;
+    }
+    .fLine {
+      border-right: 1px solid rgb(255, 255, 255);
+    }
+    .fText {
+      font-size: 15px;
+      font-weight: 400;
+      color: rgb(255, 255, 255);
+      vertical-align: 10px;
+      padding-left: 20px;
+      padding-top: 22px;
+    }
+  }
+}
