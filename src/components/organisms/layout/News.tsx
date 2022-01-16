@@ -1,23 +1,11 @@
-import axios from "axios";
-import { memo, useEffect, useState, VFC } from "react";
+import { memo, VFC } from "react";
 import styles from "../../../styles/news/news.module.css";
 import { NewsType } from "../../../types/newsType";
+import { useAllNews } from "../apiHooks/useAllNews";
 
 export const News: VFC = memo(() => {
-  const [newsData, setNewsData] = useState<NewsType[]>([]);
-  const ApiUrl = "http://127.0.0.1:8000/api/news/";
-  useEffect(() => {
-    axios.get<NewsType[]>(ApiUrl).then((res) => {
-      const data = res.data.map((news) => ({
-        id: news.id,
-        created_at: news.created_at,
-        update_at: news.update_at,
-        title: news.title,
-        body: news.body,
-      }));
-      setNewsData(data);
-    });
-  }, []);
+  const { newsData } = useAllNews();
+
   const filterData = newsData.filter((data) => {
     return data.id < 4;
   });
@@ -40,11 +28,14 @@ export const News: VFC = memo(() => {
                   </span>
                   <span className={styles.newsData}>{news.created_at}</span>
                   <span className={styles.newsTitle}>
-                    <a href="/">{news.title}</a>
+                    <a href={`/news_detail/${news.id}`}>{news.title}</a>
                   </span>
                 </li>
               );
             })}
+            <span className={styles.newsListTag}>
+              <a href="/home/news_page">News一覧ページへ &gt;&gt;</a>
+            </span>
           </ul>
         </div>
       </div>

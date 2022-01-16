@@ -54,10 +54,10 @@
   list-style: none;
   margin: 0;
   width: 600px;
-  padding-bottom: 35px;
-  padding-top: 35px;
-  margin-left: 10%;
-  margin-right: 10%;
+  padding-bottom: 45px;
+  padding-top: 45px;
+  margin-left: 100px;
+  margin-right: 50px;
   text-align: center;
 }
 
@@ -116,5 +116,19 @@
   margin-left: 20px;
   font-weight: 600;
   margin-bottom: 15px;
+}
+
+.mainWrap .newsWrap .newsInnerWrap .newsListTag {
+  background-color: #f08000;
+  float: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none;
+  color: white;
+  font-size: 11px;
+  padding: 5px 15px 6px;
+  font-weight: 600;
+  font-size: 14px;
 }
 /*# sourceMappingURL=news.module.css.map */
