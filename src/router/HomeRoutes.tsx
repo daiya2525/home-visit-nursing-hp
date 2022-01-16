@@ -2,13 +2,9 @@ import { About } from "../components/pages/About";
 import { Contact } from "../components/pages/Contact";
 import { Home } from "../components/pages/Home";
 import { Member } from "../components/pages/Member";
+import { NewsSection } from "../components/pages/NewsSection";
 import { Page404 } from "../components/pages/Page404";
 import { Recruitment } from "../components/pages/Recruitment";
-
-// const news = {
-//   newsData: "2021-12-6",
-//   newsTitle: "閉館時間が変更されました",
-// };
 
 export const HomeRoutes = [
   {
@@ -35,6 +31,11 @@ export const HomeRoutes = [
     path: "/contact",
     exact: false,
     children: <Contact />,
+  },
+  {
+    path: "/news_section",
+    exact: false,
+    children: <NewsSection />,
   },
   {
     path: "*",
