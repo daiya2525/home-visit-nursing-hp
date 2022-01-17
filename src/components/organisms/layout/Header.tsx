@@ -6,27 +6,36 @@ import { faInstagramSquare } from "@fortawesome/free-brands-svg-icons";
 import nimil from "../../../static/images/nimil.png";
 
 import styles from "../../../styles/header/header.module.css";
+import { Link } from "react-router-dom";
 
 export const Header: VFC = memo(() => {
   return (
     <header className={styles.header}>
       <div className={styles.headerInner}>
-        <a href="/home" className={styles.siteTitle}>
+        <Link to="/home" className={styles.siteTitle}>
           <img src={nimil} alt="タイトルロゴの画像です" />
-        </a>
+        </Link>
         <nav className={styles.menuHeaderNav}>
           <ul className={styles.menuUl}>
             <li className={styles.menuItem}>
-              <a href="/home/about">訪問看護ステーションについて</a>
+              <Link to="/home/about" className={styles.menuButton}>
+                訪問看護ステーションについて
+              </Link>
             </li>
             <li className={styles.menuItem}>
-              <a href="/home/member">メンバー</a>
+              <Link to="/home/member" className={styles.menuButton}>
+                メンバー
+              </Link>
             </li>
             <li className={styles.menuItem}>
-              <a href="/home/recruitment">採用募集</a>
+              <Link to="/home/recruitment" className={styles.menuButton}>
+                採用募集
+              </Link>
             </li>
             <li className={styles.menuItem}>
-              <a href="/home/contact">お問合せ</a>
+              <Link to="/home/contact" className={styles.menuButton}>
+                お問合せ
+              </Link>
             </li>
             <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vSyb7t86oGFh059p9adw3_zbdctc0JXf2b5CldU1n4uI87hdoEsM65U_vRvQ6leoyOWFBIXyuZfQYXg/pub?output=pdf">
               <img

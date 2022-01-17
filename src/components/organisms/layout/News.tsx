@@ -1,4 +1,5 @@
 import { memo, VFC } from "react";
+import { Link } from "react-router-dom";
 import styles from "../../../styles/news/news.module.css";
 import { NewsType } from "../../../types/newsType";
 import { useAllNews } from "../apiHooks/useAllNews";
@@ -24,17 +25,24 @@ export const News: VFC = memo(() => {
               return (
                 <li key={index} className={styles.newsItem}>
                   <span className={styles.newsTag}>
-                    <a href="/home/news_page">お知らせ</a>
+                    <Link to="/home/news_page" className={styles.newsTagButton}>
+                      お知らせ
+                    </Link>
                   </span>
                   <span className={styles.newsData}>{news.created_at}</span>
                   <span className={styles.newsTitle}>
-                    <a href={`/news_detail/${news.id}`}>{news.title}</a>
+                    <Link
+                      to={`/home/news_page/news_detail/${news.id}`}
+                      className={styles.newsTitleButton}
+                    >
+                      {news.title}
+                    </Link>
                   </span>
                 </li>
               );
             })}
             <span className={styles.newsListTag}>
-              <a href="/home/news_page">News一覧ページへ &gt;&gt;</a>
+              <Link to="/home/news_page">News一覧ページへ &gt;&gt;</Link>
             </span>
           </ul>
         </div>

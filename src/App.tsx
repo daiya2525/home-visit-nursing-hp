@@ -1,12 +1,15 @@
 import { BrowserRouter } from "react-router-dom";
-import "./styles/body/body.module.css";
-
 import { Router } from "./router/Router";
+
+import "./styles/body/body.module.css";
+import ScrollToTop from "./components/organisms/utils/ScrollToTop";
 
 function App() {
   return (
     <BrowserRouter>
-      <Router />
+      <ScrollToTop>
+        <Router />
+      </ScrollToTop>
     </BrowserRouter>
   );
 }

@@ -58,7 +58,7 @@
             margin-bottom: 0;
           }
 
-          .newsTag a {
+          .newsTag .newsTagButton {
             background-color: #f08000;
             float: left;
             display: flex;
@@ -70,7 +70,7 @@
             font-size: 14px;
           }
 
-          .newsTitle a {
+          .newsTitle .newsTitleButton {
             color: #333;
             margin: 0;
             width: 80%;
