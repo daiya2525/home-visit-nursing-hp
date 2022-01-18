@@ -27,7 +27,7 @@ export const NewsDetail: VFC = memo(() => {
   }, []);
 
   return (
-    <main className={styles.mainWrapper}>
+    <div className={styles.mainWrapper}>
       <div
         className={styles.introWrapper}
         style={{ backgroundImage: `url(${news_page_bg})` }}
@@ -38,24 +38,28 @@ export const NewsDetail: VFC = memo(() => {
           <li className={styles.fText}>イベント & ニュース</li>
         </ul>
       </div>
+      <nav role="navigation" className={styles.newsDetailNav}>
+        <ul>
+          <li>
+            <Link to="/news_page" className="navButton">
+              NEWS一覧ページ
+            </Link>
+          </li>
+          <li>{detailData?.title}</li>
+        </ul>
+      </nav>
       <div className={styles.newsWrap}>
-        <div className={styles.newsInnerWrap}>
-          <ul className={styles.newsList}>
-            <li className={styles.newsItem}>
-              <span className={styles.newsTag}>
-                <Link to="/news_page" className={styles.newsTagButton}>
-                  お知らせ
-                </Link>
-              </span>
-              <p className={styles.newsData}>{detailData?.created_at}</p>
-              <span className={styles.newsTitle}>
-                <p className={styles.newsTitleButton}>{detailData?.title}</p>
-              </span>
-            </li>
-            <li className={styles.newsBody}>{detailData?.body}</li>
-          </ul>
+        <div className={styles.newsInner}>
+          <h3 className={styles.newsTitle}>
+            {detailData?.title}
+            <br />
+            <small className={styles.newsUpdated}>
+              {detailData?.created_at}
+            </small>
+          </h3>
         </div>
+        <p className={styles.newsBody}>{detailData?.body}</p>
       </div>
-    </main>
+    </div>
   );
 });

@@ -32,7 +32,7 @@ export const NewsPage: VFC = memo(() => {
                       お知らせ
                     </Link>
                   </span>
-                  <span className={styles.newsData}>{news.created_at}</span>
+                  <span className={styles.newsData}>{news.updated_at}</span>
                   <span className={styles.newsTitle}>
                     <Link
                       to={`/news_page/${news.id}`}

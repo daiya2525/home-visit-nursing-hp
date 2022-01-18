@@ -10,7 +10,7 @@ export const useAllNews = () => {
       const data = res.data.map((news) => ({
         id: news.id,
         created_at: news.created_at,
-        update_at: news.update_at,
+        updated_at: news.updated_at,
         title: news.title,
         body: news.body,
       }));
