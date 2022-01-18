@@ -4,6 +4,7 @@ import styles from "../../styles/newspage/news_page.module.css";
 import news_page_bg from "../../static/images/news_page_bg.jpg";
 import { useAllNews } from "../organisms/apiHooks/useAllNews";
 import { NewsType } from "../../types/newsType";
+import { Link } from "react-router-dom";
 
 export const NewsPage: VFC = memo(() => {
   const { newsData } = useAllNews();
@@ -22,21 +23,28 @@ export const NewsPage: VFC = memo(() => {
       </div>
       <div className={styles.newsWrap}>
         <div className={styles.newsInnerWrap}>
-          {newsData.map((news: NewsType, index) => {
-            return (
-              <ul className={styles.newsList}>
+          <ul className={styles.newsList}>
+            {newsData.map((news: NewsType, index) => {
+              return (
                 <li key={index} className={styles.newsItem}>
                   <span className={styles.newsTag}>
-                    <a href="/home/news_page">お知らせ</a>
+                    <Link to="/news_page" className={styles.newsTagButton}>
+                      お知らせ
+                    </Link>
                   </span>
                   <span className={styles.newsData}>{news.created_at}</span>
                   <span className={styles.newsTitle}>
-                    <a href={`/home/news_page/${news.id}`}>{news.title}</a>
+                    <Link
+                      to={`/news_page/${news.id}`}
+                      className={styles.newsTitleButton}
+                    >
+                      {news.title}
+                    </Link>
                   </span>
                 </li>
-              </ul>
-            );
-          })}
+              );
+            })}
+          </ul>
         </div>
       </div>
     </main>

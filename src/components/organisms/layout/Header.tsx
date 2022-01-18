@@ -12,28 +12,28 @@ export const Header: VFC = memo(() => {
   return (
     <header className={styles.header}>
       <div className={styles.headerInner}>
-        <Link to="/home" className={styles.siteTitle}>
+        <Link to="/" className={styles.siteTitle}>
           <img src={nimil} alt="タイトルロゴの画像です" />
         </Link>
         <nav className={styles.menuHeaderNav}>
           <ul className={styles.menuUl}>
             <li className={styles.menuItem}>
-              <Link to="/home/about" className={styles.menuButton}>
+              <Link to="/about" className={styles.menuButton}>
                 訪問看護ステーションについて
               </Link>
             </li>
             <li className={styles.menuItem}>
-              <Link to="/home/member" className={styles.menuButton}>
+              <Link to="/member" className={styles.menuButton}>
                 メンバー
               </Link>
             </li>
             <li className={styles.menuItem}>
-              <Link to="/home/recruitment" className={styles.menuButton}>
+              <Link to="/recruitment" className={styles.menuButton}>
                 採用募集
               </Link>
             </li>
             <li className={styles.menuItem}>
-              <Link to="/home/contact" className={styles.menuButton}>
+              <Link to="/contact" className={styles.menuButton}>
                 お問合せ
               </Link>
             </li>

@@ -83,6 +83,12 @@
   padding: 5px 15px 6px;
   font-weight: 600;
   font-size: 14px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.mainWrap .newsWrap .newsInnerWrap .newsList .newsItem .newsTag .newsTagButton:hover {
+  opacity: 0.8;
 }
 
 .mainWrap .newsWrap .newsInnerWrap .newsList .newsItem .newsTitle .newsTitleButton {
@@ -130,5 +136,11 @@
   padding: 5px 15px 6px;
   font-weight: 600;
   font-size: 14px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.mainWrap .newsWrap .newsInnerWrap .newsListTag:hover {
+  opacity: 0.8;
 }
 /*# sourceMappingURL=news.module.css.map */

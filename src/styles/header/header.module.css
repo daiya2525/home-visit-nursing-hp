@@ -62,10 +62,32 @@ header .menuUl .menuItem .menuButton {
   font-size: 16px;
   font-weight: bold;
   text-decoration: none;
+  position: relative;
 }
 
-header .menuUl .menuItem .menuButton:hover {
-  opacity: 0.6;
+header .menuUl .menuItem .menuButton::after {
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  content: "";
+  width: 78%;
+  height: 2px;
+  background: orange;
+  -webkit-transform: scale(0, 1);
+          transform: scale(0, 1);
+  -webkit-transform-origin: right top;
+          transform-origin: right top;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+header .menuUl .menuItem .menuButton:hover::after {
+  -webkit-transform-origin: left top;
+          transform-origin: left top;
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
 }
 
 header .menuUl a img {

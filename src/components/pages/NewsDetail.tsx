@@ -9,6 +9,7 @@ import { useParams } from "react-router-dom";
 export const NewsDetail: VFC = memo(() => {
   //   const { newsData } = useAllNews();
   const { id } = useParams<{ id: string }>();
+  console.log(id);
 
   return (
     <p style={{ color: "red", fontSize: "100px", paddingTop: "300px" }}>{id}</p>
