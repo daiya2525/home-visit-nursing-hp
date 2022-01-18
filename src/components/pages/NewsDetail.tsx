@@ -53,12 +53,12 @@ export const NewsDetail: VFC = memo(() => {
           <h3 className={styles.newsTitle}>
             {detailData?.title}
             <br />
-            <small className={styles.newsUpdated}>
+            <small className={styles.newsUpdate}>
               {detailData?.created_at}
             </small>
           </h3>
+          <p className={styles.newsBody}>{detailData?.body}</p>
         </div>
-        <p className={styles.newsBody}>{detailData?.body}</p>
       </div>
     </div>
   );

@@ -68,27 +68,38 @@
 
   .newsWrap {
     display: block;
-    // box-shadow: 0 2px 15px rgb(0 0 0 / 5%);
 
     .newsInner {
       width: 800px;
       height: 1000px;
-      color: green;
+      color: orange;
       margin-left: auto;
       margin-right: auto;
       margin-top: 30px;
       padding: 24px;
+      box-shadow: 0 2px 15px #eee;
 
       .newsTitle {
         margin: 0;
         font-size: 30px;
-        padding-bottom: 20px;
+        padding: 0 20px 20px 20px;
         border-bottom: 1px solid #eee;
 
         small {
           font-size: 14px;
           font-weight: normal;
         }
+      }
+
+      .newsBody {
+        padding: 50px 20px;
+        letter-spacing: 0.1rem;
+        font-family: "Poppins", "Noto Sans Japanese", YuGothic, "-apple-system",
+          "Helvetica Neue", Meiryo, sans-serif;
+        line-height: 2;
+        font-size: 16px;
+        color: #2c363a;
+        white-space: initial;
       }
     }
   }
