@@ -48,6 +48,7 @@ header .menuUl {
 }
 
 header .menuUl .menuItem {
+  text-align: center;
   margin: 0 20px;
   width: 80px;
 }
@@ -70,7 +71,7 @@ header .menuUl .menuItem .menuButton::after {
   bottom: -10px;
   left: 0;
   content: "";
-  width: 78%;
+  width: 100%;
   height: 2px;
   background: orange;
   -webkit-transform: scale(0, 1);

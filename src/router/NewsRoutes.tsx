@@ -7,11 +7,6 @@ export const NewsRoutes = [
     exact: true,
     children: <NewsPage />,
   },
-  // {
-  //   path: "/news_detail",
-  //   exact: false,
-  //   children: <NewsDetail />,
-  // },
   {
     path: "/:id",
     exact: false,

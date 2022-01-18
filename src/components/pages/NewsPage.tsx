@@ -1,6 +1,6 @@
 import { memo, VFC } from "react";
 
-import styles from "../../styles/newspage/news_page.module.css";
+import styles from "../../styles/newsPage/news_page.module.css";
 import news_page_bg from "../../static/images/news_page_bg.jpg";
 import { useAllNews } from "../organisms/apiHooks/useAllNews";
 import { NewsType } from "../../types/newsType";
