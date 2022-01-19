@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@chakra-ui/react": "^1.7.4",
+    "@emotion/react": "^11.7.1",
+    "@emotion/styled": "^11.6.0",
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
     "@fortawesome/free-brands-svg-icons": "^5.15.4",
     "@fortawesome/react-fontawesome": "^0.1.16",
@@ -18,8 +21,10 @@
     "@types/styled-components": "^5.1.18",
     "animate.css": "^4.1.1",
     "animate.css-react": "^1.1.0",
+    "anime.css": "^1.0.1",
     "axios": "^0.24.0",
     "destyle.css": "^3.0.2",
+    "framer-motion": "^5.6.0",
     "jquery": "^3.6.0",
     "node-sass": "^7.0.0",
     "react": "^17.0.2",
@@ -28,6 +33,7 @@
     "react-router-dom": "^5.3.0",
     "react-scripts": "5.0.0",
     "react-slick": "^0.28.1",
+    "scrollreveal": "^4.0.9",
     "slick-carousel": "^1.8.1",
     "styled-components": "^5.3.3",
     "swiper": "^7.3.4",
@@ -57,5 +63,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/scrollreveal": "^0.0.7"
   }
 }

@@ -1,11 +1,14 @@
-import { memo, VFC } from "react";
+/* eslint-disable react-hooks/exhaustive-deps */
+import { memo, useEffect, VFC } from "react";
 import { Link } from "react-router-dom";
 import styles from "../../../styles/news/news.module.css";
 import { NewsType } from "../../../types/newsType";
 import { useAllNews } from "../apiHooks/useAllNews";
 
 export const News: VFC = memo(() => {
-  const { newsData } = useAllNews();
+  const { getNews, newsData } = useAllNews();
+
+  useEffect(() => getNews(), []);
 
   const filterData = newsData.filter((data) => {
     return data.id < 4;

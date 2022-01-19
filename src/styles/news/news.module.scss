@@ -1,12 +1,11 @@
 .mainWrap {
   width: 100%;
-  height: 520px;
+  height: 620px;
   position: relative;
   .fTitleBox {
     display: flex;
     justify-content: center;
     padding-top: 50px;
-
     .fTitle {
       font-size: 50px;
       letter-spacing: -0.05em;
@@ -15,6 +14,7 @@
       padding: 0px 5px 0px 0px;
       font-weight: 400;
       padding-right: 20px;
+      text-align: center;
     }
     .fLine {
       border-right: 1px solid rgb(240, 157, 0);

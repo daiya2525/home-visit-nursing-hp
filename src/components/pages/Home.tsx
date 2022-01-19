@@ -7,6 +7,7 @@ import backgroundImage3 from "../../static/images/backgroundImage3.jpg";
 import backgroundImage4 from "../../static/images/backgroundImage4.jpg";
 
 import { News } from "../organisms/layout/News";
+import { Message } from "../organisms/layout/Message";
 
 export const Home: VFC = memo(() => {
   return (
@@ -35,15 +36,15 @@ export const Home: VFC = memo(() => {
           />
         </div>
       </section>
-
-      <section className={styles.introWrapper}>
+      <div className={styles.introWrapper}>
         <p className={styles.intro}>
           利用者の皆様に安心・幸せを届ける「訪問看護ステーション」
         </p>
-      </section>
+      </div>
 
       <section className={styles.bgPc}>
         <News />
+        <Message />
       </section>
     </main>
   );

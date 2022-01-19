@@ -1,13 +1,16 @@
-import { memo, VFC } from "react";
+/* eslint-disable react-hooks/exhaustive-deps */
+import { memo, useEffect, VFC } from "react";
+import { Link } from "react-router-dom";
 
 import styles from "../../styles/newsPage/news_page.module.css";
 import news_page_bg from "../../static/images/news_page_bg.jpg";
 import { useAllNews } from "../organisms/apiHooks/useAllNews";
 import { NewsType } from "../../types/newsType";
-import { Link } from "react-router-dom";
 
 export const NewsPage: VFC = memo(() => {
-  const { newsData } = useAllNews();
+  const { getNews, newsData } = useAllNews();
+
+  useEffect(() => getNews(), []);
 
   return (
     <main className={styles.mainWrapper}>

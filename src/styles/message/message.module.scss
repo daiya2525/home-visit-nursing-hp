@@ -1,0 +1,67 @@
+.mainWrap {
+  background-color: #fff;
+  width: 100%;
+  height: 540px;
+  position: relative;
+
+  .fTitle {
+    font-size: 50px;
+    letter-spacing: -0.05em;
+    color: rgb(173, 158, 128);
+    font-weight: 400;
+    position: relative;
+    text-align: center;
+    margin-bottom: 15px;
+    padding-top: 30px;
+
+    &::after {
+      width: 40px;
+      content: "";
+      border-bottom: 1px solid #f09d00;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: -15px;
+      margin: auto;
+    }
+  }
+  .fText {
+    font-size: 15px;
+    font-weight: 400;
+    color: rgb(107, 107, 107);
+    vertical-align: 10px;
+    text-align: center;
+    margin: 0;
+    padding: 20px 0 30px;
+  }
+
+  .messageInner {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+
+    .messageBody {
+      width: 43%;
+
+      .messageTitle {
+        font-size: 26px;
+        font-weight: 700;
+        color: #f0a71a;
+        text-align: center;
+        letter-spacing: 0.05em;
+        line-height: 1.3em;
+        padding-bottom: 20px;
+      }
+
+      .messageContent {
+        font-size: 15px;
+        color: #6b6b6b;
+        letter-spacing: 0.05em;
+        line-height: 1.6em;
+      }
+    }
+  }
+}
