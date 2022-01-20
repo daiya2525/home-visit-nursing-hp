@@ -103,10 +103,11 @@
 }
 
 .bgPc {
-  background-image: url("../../static/images/bg-pc.png");
+  // background-image: url("../../static/images/bg-pc.png");
+  background-image: url("../../static/images/square-150.png");
   height: 4000px;
   width: 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background-size: 60px;
+  background-attachment: fixed;
+  background-color: rgb(249, 242, 232);
 }

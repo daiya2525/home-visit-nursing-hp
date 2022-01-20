@@ -15,7 +15,7 @@ const ScrollRevealContainer: FC<ScrollRevealContainerProps> = ({
   useEffect(() => {
     if (sectionRef.current)
       scrollReveal().reveal(sectionRef.current, {
-        reset: false,
+        // reset: false,
         delay: 400,
         opacity: 0,
         duration: 2000,

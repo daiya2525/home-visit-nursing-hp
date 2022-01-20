@@ -5,15 +5,15 @@ import { memo, VFC } from "react";
 import styles from "../../../styles/message/message.module.css";
 import ScrollRevealContainer from "../utils/ScrollReveal";
 import innerbg from "../../../static/images/Message_inner_bg.jpeg";
-import ScrollRevealContainer2 from "../utils/ScrollReveal2";
+// import ScrollRevealContainer2 from "../utils/ScrollReveal2";
 
 export const Message: VFC = memo(() => {
   return (
     <div className={styles.mainWrap}>
-      <ScrollRevealContainer2 move="left">
-        <h2 className={styles.fTitle}>Message</h2>
-        <p className={styles.fText}>みなさまへ</p>
-      </ScrollRevealContainer2>
+      {/* <ScrollRevealContainer2 move="left"> */}
+      <h2 className={styles.fTitle}>Message</h2>
+      <p className={styles.fText}>みなさまへ</p>
+      {/* </ScrollRevealContainer2> */}
       <ScrollRevealContainer move="right">
         <div className={styles.messageInner}>
           <div className={styles.messageBody}>
