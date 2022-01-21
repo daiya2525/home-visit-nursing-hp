@@ -1,0 +1,134 @@
+.mainWrap {
+  background-color: #f9ead2;
+  width: 100%;
+  height: 700px;
+  position: relative;
+}
+
+.mainWrap .fTitle {
+  font-size: 50px;
+  letter-spacing: -0.05em;
+  color: #ad9e80;
+  font-weight: 400;
+  position: relative;
+  text-align: center;
+  margin-bottom: 15px;
+  padding-top: 30px;
+}
+
+.mainWrap .fTitle::after {
+  width: 40px;
+  content: "";
+  border-bottom: 1px solid #f09d00;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: -15px;
+  margin: auto;
+}
+
+.mainWrap .fText {
+  font-size: 15px;
+  font-weight: 400;
+  color: #6b6b6b;
+  vertical-align: 10px;
+  text-align: center;
+  margin: 0;
+  padding: 20px 0 30px;
+}
+
+.mainWrap .bTitle {
+  font-size: 26px;
+  font-weight: 700;
+  color: #f0a71a;
+  text-align: center;
+  letter-spacing: 0.05em;
+  line-height: 1.3em;
+  padding-bottom: 20px;
+}
+
+.mainWrap .bText {
+  font-size: 18px;
+  color: #6b6b6b;
+  letter-spacing: 0.05em;
+  line-height: 1.6em;
+  text-align: center;
+}
+
+.mainWrap .visitInner {
+  width: 100%;
+  margin-top: 50px;
+  padding-right: 180px;
+  padding-left: 180px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.mainWrap .visitInner .contact_part {
+  color: black;
+  text-align: center;
+}
+
+.mainWrap .visitInner .contact_part .contact_title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 10px;
+}
+
+.mainWrap .visitInner .contact_part .contact_title .first_li {
+  background-color: orange;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  line-height: 60px;
+  text-align: center;
+}
+
+.mainWrap .visitInner .contact_part .contact_title .first_li span {
+  font-size: 35px;
+  color: #fff;
+  font-weight: 400;
+}
+
+.mainWrap .visitInner .contact_part .contact_title .second_li {
+  padding-top: 20px;
+  padding-left: 20px;
+  color: #f0a71a;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.mainWrap .visitInner .contact_part .contact_body {
+  -webkit-box-shadow: 1px 1px 3px 0px #00000038;
+          box-shadow: 1px 1px 3px 0px #00000038;
+}
+
+.mainWrap .visitInner .contact_part .contact_body ul {
+  background-color: white;
+  width: 230px;
+  height: 230px;
+}
+
+.mainWrap .visitInner .contact_part .contact_body ul .first_li img {
+  padding-top: 10px;
+}
+
+.mainWrap .visitInner .contact_part .contact_body ul .second_li {
+  color: #6b6b6b;
+  font-size: 15px;
+  font-weight: bold;
+  padding-top: 20px;
+}
+
+.mainWrap .visitInner .contact_part .contact_body:not(:last-child):after {
+  content: ">";
+  color: white;
+  padding-left: 15px;
+}
+/*# sourceMappingURL=visit.module.css.map */

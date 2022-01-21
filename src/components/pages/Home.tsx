@@ -8,6 +8,7 @@ import backgroundImage4 from "../../static/images/backgroundImage4.jpg";
 
 import { News } from "../organisms/layout/News";
 import { Message } from "../organisms/layout/Message";
+import { Visit } from "../organisms/layout/Visit";
 import { Contents } from "../organisms/layout/Contents";
 
 export const Home: VFC = memo(() => {
@@ -46,6 +47,7 @@ export const Home: VFC = memo(() => {
       <section className={styles.bgPc}>
         <News />
         <Message />
+        <Visit />
         <Contents />
       </section>
     </main>

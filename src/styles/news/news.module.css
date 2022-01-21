@@ -1,6 +1,6 @@
 .mainWrap {
   width: 100%;
-  height: 620px;
+  height: 550px;
   position: relative;
 }
 
@@ -41,7 +41,7 @@
 .mainWrap .newsWrap {
   width: 100%;
   height: 400px;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 .mainWrap .newsWrap .newsInnerWrap {

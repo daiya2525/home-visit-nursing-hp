@@ -41,6 +41,11 @@ export const NewsDetail: VFC = memo(() => {
       <nav role="navigation" className={styles.newsDetailNav}>
         <ul>
           <li>
+            <Link to="/" className="navButton">
+              TOPページ
+            </Link>
+          </li>
+          <li>
             <Link to="/news_page" className="navButton">
               NEWS一覧ページ
             </Link>

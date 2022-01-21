@@ -1,11 +1,12 @@
 .bgImageContainer {
   padding-top: 70px;
   color: black;
+  height: 890px;
 }
 
 .bgImageWrapper {
   width: 100%;
-  height: 600px;
+  height: 890px;
   overflow: hidden;
   position: relative;
 }
@@ -112,6 +113,7 @@
 }
 
 .introWrapper {
+  margin-top: 70px;
   height: 50px;
   width: 100%;
   background-color: orange;
@@ -141,6 +143,6 @@
   width: 100%;
   background-size: 60px;
   background-attachment: fixed;
-  background-color: #f9f2e8;
+  background-color: #fbf9f5;
 }
 /*# sourceMappingURL=home.module.css.map */

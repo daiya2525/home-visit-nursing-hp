@@ -24,6 +24,18 @@ export const NewsPage: VFC = memo(() => {
           <li className={styles.fText}>イベント & ニュース</li>
         </ul>
       </div>
+      <nav role="navigation" className={styles.newsDetailNav}>
+        <ul>
+          <li>
+            <Link to="/" className="navButton">
+              TOPページ
+            </Link>
+          </li>
+          <li>
+            <span className="navButton">NEWS一覧ページ</span>
+          </li>
+        </ul>
+      </nav>
       <div className={styles.newsWrap}>
         <div className={styles.newsInnerWrap}>
           <ul className={styles.newsList}>
