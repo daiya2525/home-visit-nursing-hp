@@ -3,10 +3,10 @@
 import { memo, VFC } from "react";
 
 import styles from "../../../styles/visit/visit.module.css";
-// import ScrollRevealContainer from "../utils/ScrollReveal";
 import mailPic from "../../../static/images/mail_image.jpg";
 import visitPic from "../../../static/images/visit_image.jpg";
 import interviewPic from "../../../static/images/interview_image.jpeg";
+import workPic from "../../../static/images/work_image.jpg";
 import ScrollRevealContainer from "../utils/ScrollReveal";
 
 export const Visit: VFC = memo(() => {
@@ -113,7 +113,7 @@ export const Visit: VFC = memo(() => {
               <ul>
                 <li className={styles.first_li}>
                   <img
-                    src={mailPic}
+                    src={workPic}
                     alt="お問合せイメージです"
                     width={"210px"}
                     height={"160px"}

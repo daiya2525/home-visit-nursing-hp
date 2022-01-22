@@ -69,8 +69,8 @@ export const Contents: VFC = memo(() => {
           </div>
           <div className={styles.text}>
             <div>
-              <span>Contact</span>
-              <span>お問合せ</span>
+              <span>Recruitment</span>
+              <span>採用募集</span>
             </div>
             <img
               src={rightLogo}

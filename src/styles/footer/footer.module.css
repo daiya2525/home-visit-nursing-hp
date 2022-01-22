@@ -1,0 +1,20 @@
+footer {
+  padding-bottom: 100px;
+  width: 100%;
+}
+
+footer .footerWrap {
+  width: 1080px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+footer .map_canvas {
+  background-color: orange;
+  width: 200px;
+  height: 200px;
+}
+/*# sourceMappingURL=footer.module.css.map */

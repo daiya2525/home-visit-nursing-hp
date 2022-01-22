@@ -13,9 +13,14 @@ import { Contents } from "../organisms/layout/Contents";
 
 export const Home: VFC = memo(() => {
   return (
-    <main>
+    <main className={styles.mainWrapper}>
       <section className={styles.bgImageContainer}>
         <div className={styles.bgImageWrapper}>
+          {/* <ul className={styles.bgText}>
+            <li className={styles.bg_li1}>続けられるように。</li>
+            <li className={styles.bg_li2}>生活が</li>
+            <li className={styles.bg_li3}>住み慣れたご自宅で</li>
+          </ul> */}
           <img
             className={styles.bgItem1}
             src={backgroundImage1}

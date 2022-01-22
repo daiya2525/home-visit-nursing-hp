@@ -1,35 +1,21 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import { memo, VFC } from "react";
 
-import "../../../styles/header/header.module.css";
+import styles from "../../../styles/footer/footer.module.css";
 
 export const Footer: VFC = memo(() => {
   return (
     <footer>
-      <div className="header-inner">
-        <h1 className="site-title">
-          <a className="header-logo" href="/home">
-            訪問看護ステーション
-          </a>
-        </h1>
-        <nav className="menu-header-nav">
-          <ul className="menu-ul">
-            <li className="menu-item">
-              <a href="/home/about">訪問看護ステーションについて</a>
-            </li>
-            <li className="menu-item">
-              <a href="/home/member">メンバー</a>
-            </li>
-            <li className="menu-item">
-              <a href="/home/recruitment">採用募集</a>
-            </li>
-            <li className="menu-item">
-              <a href="/home/contact">お問合せ</a>
-            </li>
-            <button className="pdf-btn">PDF</button>
-            <button className="sns-btn"> SNS</button>
-          </ul>
-        </nav>
+      <div className={styles.footerWrap}>
+        <div className={styles.footerInfo}>
+          <h1>訪問看護ステーション</h1>
+          <p className={styles.address}>
+            〒581-0882 大阪府八尾市恩智北町3丁目8番 2階
+          </p>
+          <a href="tel:080-4018-0882">tel.080-4018-0882</a>
+        </div>
+        <div className={styles.map_canvas}></div>
+        <p className={styles.copy_right}>aiueo</p>
       </div>
     </footer>
   );
