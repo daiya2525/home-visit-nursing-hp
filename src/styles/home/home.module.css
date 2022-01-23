@@ -12,9 +12,9 @@
 }
 
 .bgImageWrapper {
-  width: 95%;
+  width: 98%;
   height: 890px;
-  border: 3px solid orange;
+  border: 2px solid orange;
   margin: 0 auto;
   border-radius: 10px;
   overflow: hidden;
@@ -128,7 +128,7 @@
   margin-left: auto;
   border-radius: 10px;
   height: 60px;
-  width: 95%;
+  width: 98%;
   background-color: orange;
   position: relative;
 }
@@ -152,7 +152,7 @@
 
 .bgPc {
   background-image: url("../../static/images/square-150.png");
-  height: 3000px;
+  height: 2940px;
   width: 100%;
   background-size: 60px;
   background-attachment: fixed;
