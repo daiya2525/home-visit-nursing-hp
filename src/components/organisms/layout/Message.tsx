@@ -12,7 +12,7 @@ export const Message: VFC = memo(() => {
       <div className={styles.mainWrap}>
         <h2 className={styles.fTitle}>Message</h2>
         <p className={styles.fText}>みなさまへ</p>
-        <ScrollRevealContainer move="right">
+        <ScrollRevealContainer move="bottom">
           <div className={styles.messageInner}>
             <div className={styles.messageBody}>
               <p className={styles.messageTitle}>

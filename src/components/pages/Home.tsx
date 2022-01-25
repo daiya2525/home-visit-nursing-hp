@@ -10,17 +10,13 @@ import { News } from "../organisms/layout/News";
 import { Message } from "../organisms/layout/Message";
 import { Visit } from "../organisms/layout/Visit";
 import { Contents } from "../organisms/layout/Contents";
+import ScrollRevealContainer from "../organisms/utils/ScrollReveal";
 
 export const Home: VFC = memo(() => {
   return (
     <main className={styles.mainWrapper}>
       <section className={styles.bgImageContainer}>
         <div className={styles.bgImageWrapper}>
-          {/* <ul className={styles.bgText}>
-            <li className={styles.bg_li1}>続けられるように。</li>
-            <li className={styles.bg_li2}>生活が</li>
-            <li className={styles.bg_li3}>住み慣れたご自宅で</li>
-          </ul> */}
           <img
             className={styles.bgItem1}
             src={backgroundImage1}
@@ -41,6 +37,23 @@ export const Home: VFC = memo(() => {
             src={backgroundImage4}
             alt="背景画像4です"
           />
+        </div>
+        <div className={styles.bgText}>
+          <ScrollRevealContainer move="bottom">
+            <div className={styles.bg_li1}>
+              <span>続けられるように。</span>
+            </div>
+          </ScrollRevealContainer>
+          <ScrollRevealContainer move="bottom">
+            <div className={styles.bg_li2}>
+              <span>末長く生活が</span>
+            </div>
+          </ScrollRevealContainer>
+          <ScrollRevealContainer move="bottom">
+            <div className={styles.bg_li3}>
+              <span>住み慣れたご自宅で</span>
+            </div>
+          </ScrollRevealContainer>
         </div>
       </section>
       <div className={styles.introWrapper}>

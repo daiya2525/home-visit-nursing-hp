@@ -25,9 +25,26 @@ export const Footer: VFC = memo(() => {
               <Link to="/contact">お問合せはこちらから</Link>
             </div>
           </div>
-          <div className={styles.page_transition}></div>
+          <ul className={styles.page_transition}>
+            <li className={styles.transition1}>
+              <Link to="/about">訪問看護ステーションについて</Link>
+              <Link to="#">?</Link>
+            </li>
+            <li className={styles.transition2}>
+              <Link to="/about">メンバー</Link>
+              <Link to="#">?</Link>
+            </li>
+            <li className={styles.transition3}>
+              <Link to="/about">採用募集</Link>
+              <Link to="#">?</Link>
+            </li>
+            <li className={styles.transition4}>
+              <Link to="/about">お問合せ</Link>
+              <Link to="#">?</Link>
+            </li>
+          </ul>
           <p className={styles.copy_right}>
-            © HOME VISIT, All Rights Reserved.
+            © HOME VISIT NURSING, All Rights Reserved.
           </p>
         </div>
         <div className={styles.map_canvas}>

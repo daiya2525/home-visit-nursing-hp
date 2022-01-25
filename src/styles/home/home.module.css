@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap");
 .mainWrapper {
   background-image: url("../../static/images/square-150.png");
   background-size: 60px;
@@ -7,8 +8,69 @@
 
 .bgImageContainer {
   padding-top: 70px;
-  color: black;
   height: 890px;
+}
+
+.bgImageContainer .bgText {
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  position: absolute;
+  z-index: 100;
+  top: 100px;
+  right: 40px;
+  height: auto;
+}
+
+.bgImageContainer .bgText .bg_li1 {
+  border-radius: 13px;
+  background-color: #fff;
+  margin-left: 30px;
+  width: 50px;
+  padding-right: 12px;
+  text-align: center;
+  height: 250px;
+}
+
+.bgImageContainer .bgText .bg_li1 span {
+  font-size: 22px;
+  font-weight: 600;
+  color: #000000a6;
+  font-family: "Zen Kurenaido", sans-serif;
+}
+
+.bgImageContainer .bgText .bg_li2 {
+  border-radius: 13px;
+  background-color: #fff;
+  margin-left: 30px;
+  width: 50px;
+  padding-right: 12px;
+  text-align: center;
+  height: 250px;
+}
+
+.bgImageContainer .bgText .bg_li2 span {
+  font-size: 22px;
+  font-weight: 600;
+  color: #000000a6;
+  font-family: "Zen Kurenaido", sans-serif;
+}
+
+.bgImageContainer .bgText .bg_li3 {
+  border-radius: 13px;
+  background-color: #fff;
+  margin-left: 30px;
+  width: 50px;
+  padding-right: 12px;
+  text-align: center;
+  height: 250px;
+}
+
+.bgImageContainer .bgText .bg_li3 span {
+  font-size: 22px;
+  font-weight: 600;
+  color: #000000a6;
+  font-family: "Zen Kurenaido", sans-serif;
 }
 
 .bgImageWrapper {
@@ -29,8 +91,8 @@
   -o-object-fit: cover;
      object-fit: cover;
   position: absolute;
-  left: 0;
   top: 0;
+  left: 0;
   -webkit-animation: anime 19s 0s infinite;
           animation: anime 19s 0s infinite;
 }
@@ -98,28 +160,6 @@
     opacity: 0;
     z-index: 9;
   }
-}
-
-.titleWrapper {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  z-index: 99;
-}
-
-.titleWrapper .title {
-  font-weight: 600;
-  letter-spacing: 1px;
-  line-height: 1.5;
-  text-align: center;
-  background-color: rgba(238, 148, 3, 0.8);
-  padding: 30px;
-  border-radius: 50%;
-  font-size: 27px;
-  font-family: serif;
-  color: #fff;
 }
 
 .introWrapper {
