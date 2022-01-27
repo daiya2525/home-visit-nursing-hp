@@ -21,7 +21,6 @@ export const NewsDetail: VFC = memo(() => {
         },
       })
       .then((res) => {
-        console.log(res.data);
         setDetailData(res.data);
       });
   }, []);

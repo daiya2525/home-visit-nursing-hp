@@ -27,7 +27,7 @@ export const Footer: VFC = memo(() => {
           </div>
           <ul className={styles.page_transition}>
             <li className={styles.transition1}>
-              <Link to="/about">訪問看護ステーションについて</Link>
+              <Link to="/about">わたしたちについて</Link>
               <Link to="#">?</Link>
             </li>
             <li className={styles.transition2}>

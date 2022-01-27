@@ -19,7 +19,7 @@ export const Header: VFC = memo(() => {
           <ul className={styles.menuUl}>
             <li className={styles.menuItem}>
               <Link to="/about" className={styles.menuButton}>
-                訪問看護ステーションについて
+                わたしたちについて
               </Link>
             </li>
             <li className={styles.menuItem}>
