@@ -4,7 +4,8 @@ import { memo, VFC } from "react";
 
 import styles from "../../../styles/message/message.module.css";
 import ScrollRevealContainer from "../utils/ScrollReveal";
-import innerbg from "../../../static/images/Message_inner_bg.jpeg";
+// import innerbg from "../../../static/images/Message_inner_bg.jpeg";
+import message_image from "../../../static/images/message_image.jpg";
 
 export const Message: VFC = memo(() => {
   return (
@@ -27,7 +28,14 @@ export const Message: VFC = memo(() => {
                 出会えた皆様のかけがえのない人生の１ページに、訪問看護師としての時間を重ねさせてください。とびっきりの笑顔を届けます。
               </p>
             </div>
-            <img src={innerbg} className={styles.messageBottom} />
+            <div className={styles.message_image_wrapper}>
+              <img
+                src={message_image}
+                className={styles.messageImage}
+                height={"360px"}
+                alt="メッセージ画像です"
+              />
+            </div>
           </div>
         </ScrollRevealContainer>
       </div>

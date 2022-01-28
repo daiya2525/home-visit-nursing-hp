@@ -64,4 +64,19 @@
       }
     }
   }
+
+  .message_image_wrapper {
+    position: relative;
+    display: inline-block;
+
+    &::after {
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: -60px;
+      content: "";
+      box-shadow: inset 0px 0px 15px 15px #fff;
+    }
+  }
 }
